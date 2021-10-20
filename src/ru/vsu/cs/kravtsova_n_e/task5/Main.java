@@ -1,10 +1,19 @@
 package ru.vsu.cs.kravtsova_n_e.task5;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-        printPicture(17, 15);
+        System.out.print("Введите высоту изображения (h >= 3): h = ");
+        int h = input.nextInt();
+
+        System.out.print("Введите ширину изображения (w >= 3): w = ");
+        int w = input.nextInt();
+
+        printPicture(h, w);
     }
 
     public static void printPicture(int h, int w) {
