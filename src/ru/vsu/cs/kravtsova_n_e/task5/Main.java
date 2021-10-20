@@ -8,12 +8,12 @@ public class Main {
     }
 
     public static void printPicture(int h, int w) {
-        int symbInLastRow = 0;
+        int symbInLastRow = 1;
         int countOfSpaces = 0;
         int countOfSymb = 0;
 
         for (int i = 0; i < h; i++) {
-            symbInLastRow = i-1;
+            symbInLastRow += i-1;
             for (int j = 0; j < w; j++) {
                 if (i == 0 || i == (h - 1)) {
                     if (j == 0 || j == (w - 1)) {
